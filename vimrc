@@ -116,3 +116,10 @@ let g:syntastic_warning_symbol = '!'
 
 "navigate the MiniBufExplorer without going into the MiniBufExplorer window
 let g:miniBufExplMapCTabSwitchBufs = 1 
+
+"Configure vim for code folding"
+set foldignore=
+set foldmethod=indent  "fold based on indent
+set foldnestmax=10 "deepest fold is 10 levels
+set nofoldenable  "dont fold by default
+set foldlevel=1 
