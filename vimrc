@@ -126,3 +126,5 @@ set foldlevel=1
 " add gist-vim plugin 
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
+" add yaml support 
+Bundle 'chase/vim-ansible-yaml'
