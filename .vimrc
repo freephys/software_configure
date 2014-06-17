@@ -48,7 +48,7 @@ Bundle 'SirVer/ultisnips'
 Bundle 'honza/vim-snippets'
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<c-tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
@@ -116,3 +116,32 @@ let g:syntastic_warning_symbol = '!'
 
 "navigate the MiniBufExplorer without going into the MiniBufExplorer window
 let g:miniBufExplMapCTabSwitchBufs = 1 
+
+"Configure vim for code folding"
+set foldignore=
+set foldmethod=indent  "fold based on indent
+set foldnestmax=10 "deepest fold is 10 levels
+set nofoldenable  "dont fold by default
+set foldlevel=1 
+" add gist-vim plugin 
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
+" add yaml support 
+Bundle 'chase/vim-ansible-yaml'
+" add ack-vim for better code grep
+Bundle 'mileszs/ack.vim'
+"add mhinz/vim-startify 
+Bundle 'mhinz/vim-startify'
+"add xolox/vim-session
+Bundle 'xolox/vim-session'
+Bundle 'xolox/vim-misc'
+"configue vim-session
+let g:session_autosave_periodic = '5'
+"let g:session_autoload = 'yes'
+let g:session_autosave = 'yes'
+let g:session_command_aliases = '1'
+let g:session_directory = '~/.vim/session'
+" add ag.vim for faster source code search
+Bundle 'rking/ag.vim'
+" vim-scripts/taglist.vim for code browser and fold
+Bundle 'vim-scripts/taglist.vim'
