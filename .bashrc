@@ -258,3 +258,5 @@ alias cbwd="pwd | cb"
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 alias cbhs="cat $HISTFILE | tail -n 1 | cb" 
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PIP_RESPECT_VIRTUALENV=true
